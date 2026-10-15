@@ -144,16 +144,9 @@ fun FormDataDiri(modifier: Modifier) {
 
 
 
-Button(
-modifier = Modifier.fillMaxWidth(),
-enabled = textNama.isNotBlank() &&
-textAlamat.isNotBlank() &&
-textJK.isNotBlank(),
-onClick = {
-    nama = textNama
-    jenis = textJK
-    alamat = textAlamat
-}
-) {
-    Text(text = stringResource(id = R.string.submit))
-}
+<resources>
+<dimen name="padding_small">10dp</dimen>
+<dimen name="padding_medium">30dp</dimen>
+<dimen name="padding_tipis">1dp</dimen>
+<dimen name="divider_tipis">1dp</dimen>
+</resources>
