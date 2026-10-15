@@ -145,11 +145,5 @@ fun FormDataDiri(modifier: Modifier) {
 
 
 
-var textNama by remember { mutableStateOf("") }
-var textAlamat by remember { mutableStateOf("") }
-var textJK by remember { mutableStateOf("") }
-
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
+val gender: List<String> =
+    listOf("Laki-Laki", "Perempuan")
