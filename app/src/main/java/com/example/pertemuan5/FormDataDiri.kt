@@ -144,8 +144,16 @@ fun FormDataDiri(modifier: Modifier) {
 
 
 
-HorizontalDivider(
-modifier = Modifier.padding(vertical = 16.dp),
-thickness = 1.dp,
-color = Color.DarkGray
-)
+Button(
+modifier = Modifier.fillMaxWidth(),
+enabled = textNama.isNotBlank() &&
+textAlamat.isNotBlank() &&
+textJK.isNotBlank(),
+onClick = {
+    nama = textNama
+    jenis = textJK
+    alamat = textAlamat
+}
+) {
+    Text(text = stringResource(id = R.string.submit))
+}
