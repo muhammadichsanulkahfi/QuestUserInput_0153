@@ -144,11 +144,10 @@ fun FormDataDiri(modifier: Modifier) {
 
 
 
-Column(
-modifier = modifier
-.fillMaxWidth()
-.padding(top = 50.dp),
-verticalArrangement = Arrangement.Top,
-horizontalAlignment = Alignment.CenterHorizontally
-) {
-}
+OutlinedTextField(
+value = textNama,
+onValueChange = { textNama = it },
+singleLine = true,
+modifier = Modifier.width(250.dp),
+label = { Text("Nama Lengkap") }
+)
