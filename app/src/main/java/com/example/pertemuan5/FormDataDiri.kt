@@ -145,8 +145,6 @@ fun FormDataDiri(modifier: Modifier) {
 
 
 <resources>
-<dimen name="padding_small">10dp</dimen>
-<dimen name="padding_medium">30dp</dimen>
-<dimen name="padding_tipis">1dp</dimen>
-<dimen name="divider_tipis">1dp</dimen>
+<string name="app_name">pertemuan5</string>
+<string name="submit">Submit</string>
 </resources>
